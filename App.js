@@ -1,21 +1,12 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import ChatScreen from "./ChatScreen";
+import CommentSection from "./CommentSection";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Dave Avenido</Text>
-      <Text>BSIT 3 Block 1</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <ChatScreen />
+      <CommentSection />
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  }
-});
