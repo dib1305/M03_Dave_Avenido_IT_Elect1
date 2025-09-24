@@ -1,21 +1,18 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Dave Avenido</Text>
-      <Text>BSIT 3 Block 1</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+// App.js
+import React from 'react';
+import { SafeAreaView } from 'react-native';
+import CounterApp from './CounterApp';
+import ColorChangerApp from './ColorChangerApp';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  }
-});
+const App = () => {
+    return (
+        <SafeAreaView style={{ flex: 1 }}>
+            <CounterApp />
+            <ColorChangerApp />
+        </SafeAreaView>
+    );
+};
+
+export default App;
+
